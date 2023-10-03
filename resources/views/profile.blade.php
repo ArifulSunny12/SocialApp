@@ -35,25 +35,25 @@
 
                     <!--profile container start-->
                     <p class="d-flex justify-content-end gap-2">
-                        <a class="btn btn-primary" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-primary" href="/profile" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Post
                         </a>
 
 
-                        <a class="btn btn-primary" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-primary" href="/follower" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Follower
                         </a>
 
 
-                        <a class="btn btn-primary" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-primary" href="/following" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Following
                         </a>
 
-                        <a class="btn btn-primary" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-primary" href="/about" role="button" aria-expanded="false" aria-controls="collapseExample">
                             About
                         </a>
 
-                        <a class="btn btn-primary" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-primary" href="/about" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Edit Profile
                         </a>
                       </p>

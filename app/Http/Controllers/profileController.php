@@ -30,4 +30,38 @@ class profileController extends Controller
       //return view('home',['allposts' =>$allposts]);
         //  return $data;
     }
+
+    function follower(){
+
+        $allusers = User::get();
+
+            return view('follower', compact('allusers'));
+       //   return $allusers;
+    }
+    function following(){
+
+        $allusers = User::get();
+
+            return view('following', compact('allusers'));
+       //   return $allusers;
+    }
+
+    function removefollower(){
+            return redirect('follower');
+       //   return $allusers;
+    }
+    function follow(){
+        return redirect('following');
+   //   return $allusers;
+    }
+    function unfollow(){
+        return redirect('following');
+   //   return $allusers;
+    }
+
+    function about(){
+        return redirect('profile');
+   //   return $allusers;
+    }
+    
 }
