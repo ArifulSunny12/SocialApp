@@ -24,16 +24,18 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/profile', [profileController::class, 'profile'])->name('profile');
-Route::get('/setting', [settingController::class, 'setting'])->name('setting');
-Route::post('/poststatus', [postController::class, 'poststatus'])->name('poststatus');
-Route::post('/like', [likeUpdateController::class, 'like'])->name('like');
-Route::post('/dislike', [likeUpdateController::class, 'dislike'])->name('dislike');
-Route::post('/postcomment', [commentController::class, 'postComment'])->name('postComment');
 
 
+    Route::get('/profile', [profileController::class, 'profile'])->name('profile');
+    Route::get('/setting', [settingController::class, 'setting'])->name('setting');
+    Route::post('/poststatus', [postController::class, 'poststatus'])->name('poststatus');
+    Route::post('/like', [likeUpdateController::class, 'like'])->name('like');
+    Route::post('/dislike', [likeUpdateController::class, 'dislike'])->name('dislike');
+    Route::post('/postcomment', [commentController::class, 'postComment'])->name('postComment')->middleware('auth');
 
 Route::get('/home', [HomeController::class, 'joinpostuser'])->name('home');
 
-
-Route::get('/test', [HomeController::class, 'joinpostuser'])->name('test');
+/*
+for test case
+*/
+Route::get('/test', [HomeController::class, 'testview'])->name('test');

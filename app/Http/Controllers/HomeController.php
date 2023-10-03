@@ -48,4 +48,11 @@ class HomeController extends Controller
      //return view('home',['allposts' =>$allposts]);
        //  return $data;
     }
+
+    public function testview()
+    { 
+
+     return view('test');
+     
+    }
 }

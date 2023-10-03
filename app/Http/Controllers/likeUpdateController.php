@@ -7,7 +7,12 @@ use App\Models\like;
 
 
 class likeUpdateController extends Controller
-{
+{   
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function like(Request $request){
         $user_id=$request->input("user_id");
         $post_id=$request->input("post_id");

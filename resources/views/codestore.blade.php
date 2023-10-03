@@ -119,3 +119,8 @@
                         </form>
                 <?php       }  ?>
     <!--like update-->
+    $users = User::select([
+    'users.*',
+    'last_posted_at' => Post::selectRaw('MAX(created_at)')
+            ->whereColumn('user_id', 'users.id')
+])->get();
