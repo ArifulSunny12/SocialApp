@@ -32,6 +32,7 @@ Auth::routes();
     Route::post('/like', [likeUpdateController::class, 'like'])->name('like');
     Route::post('/dislike', [likeUpdateController::class, 'dislike'])->name('dislike');
     Route::post('/postcomment', [commentController::class, 'postComment'])->name('postComment');
+    Route::post('/passwordreset', [settingController::class, 'passwordreset'])->name('passwordreset');
 
 Route::get('/home', [HomeController::class, 'joinpostuser'])->name('home');
 
