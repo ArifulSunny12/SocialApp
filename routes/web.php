@@ -31,7 +31,7 @@ Auth::routes();
     Route::post('/poststatus', [postController::class, 'poststatus'])->name('poststatus');
     Route::post('/like', [likeUpdateController::class, 'like'])->name('like');
     Route::post('/dislike', [likeUpdateController::class, 'dislike'])->name('dislike');
-    Route::post('/postcomment', [commentController::class, 'postComment'])->name('postComment')->middleware('auth');
+    Route::post('/postcomment', [commentController::class, 'postComment'])->name('postComment');
 
 Route::get('/home', [HomeController::class, 'joinpostuser'])->name('home');
 
