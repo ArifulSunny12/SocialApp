@@ -30,7 +30,7 @@ class postController extends Controller
 
             }
             else{
-                return view('profile');
+                return redirect('profile');
             }
         }
         $post_result= post::insert([
@@ -39,7 +39,7 @@ class postController extends Controller
             "image_path"=>$content_image_link
        ]);
        if($post_result==true){
-        return view('profile');
+        return redirect('profile');
     }
     else{
         return 'Record faild! try again';
